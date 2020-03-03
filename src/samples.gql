@@ -1,0 +1,44 @@
+query {
+  authors {
+    name
+  }
+}
+
+mutation {
+  addAuthor(author: {
+    name: "Author1"
+  }) {
+    authorId
+    name
+  }
+}
+
+query {
+  authors {
+    name
+  }
+}
+
+query {
+  books {
+    name
+    author {
+      name
+    }
+  }
+}
+
+mutation {
+  addBook(book: {
+    name: "Book1",
+    pageCount: 200,
+    authorId: 1
+  }) {
+    bookId
+    name
+    pageCount
+    author {
+      name
+    }
+  }
+}
