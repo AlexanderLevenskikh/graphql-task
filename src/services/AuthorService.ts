@@ -2,8 +2,6 @@ import { Service } from 'typedi';
 import { InjectRepository } from 'typeorm-typedi-extensions';
 import { Author } from '../entities/AuthorEntity';
 import { Repository } from 'typeorm';
-import { Book } from '../entities/BookEntity';
-import { IAuthorService } from './interfaces/IAuthorService';
 import { CreateAuthorInput } from '../inputs/CreateAuthorInput';
 
 @Service()

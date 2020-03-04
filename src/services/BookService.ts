@@ -3,11 +3,10 @@ import { InjectRepository } from 'typeorm-typedi-extensions';
 import { Author } from '../entities/AuthorEntity';
 import { Repository } from 'typeorm';
 import { Book } from '../entities/BookEntity';
-import { IBookService } from './interfaces/IBookService';
 import { CreateBookInput } from '../inputs/CreateBookInput';
 
 @Service()
-export class BookService implements IBookService {
+export class BookService {
     constructor(
         @InjectRepository(Author) private readonly authorRepository: Repository<Author>,
         @InjectRepository(Book) private readonly bookRepository: Repository<Book>,

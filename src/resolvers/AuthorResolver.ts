@@ -1,7 +1,6 @@
 import { Arg, Mutation, Query, Resolver } from 'type-graphql';
 import { Author } from '../entities/AuthorEntity';
-import { Service, Container, Inject } from 'typedi';
-import { IAuthorService } from '../services/interfaces/IAuthorService';
+import { Service } from 'typedi';
 import { CreateAuthorInput } from '../inputs/CreateAuthorInput';
 import { AuthorService } from '../services/AuthorService';
 

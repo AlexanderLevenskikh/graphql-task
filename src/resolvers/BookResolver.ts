@@ -1,7 +1,6 @@
 import { Arg, FieldResolver, Mutation, Query, Resolver, Root } from 'type-graphql';
 import { Author } from '../entities/AuthorEntity';
 import { Book } from '../entities/BookEntity';
-import { IBookService } from '../services/interfaces/IBookService';
 import { CreateBookInput } from '../inputs/CreateBookInput';
 import { BookService } from '../services/BookService';
 
